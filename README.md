@@ -13,7 +13,7 @@ Coder module that provisions a small `coder_script` that runs in Coder workspace
 
 ```terraform
 module "ssh_setup" {
-  source   = "git::https://github.com/embold/coder-ssh-setup.git?ref=v1.0.0"
+  source   = "git::https://github.com/emboldagency/coder-ssh-setup.git?ref=v1.0.0"
   count    = data.coder_workspace.me.start_count
   agent_id = coder_agent.example.id
 }
@@ -23,7 +23,7 @@ Set hosts for the known_hosts file:
 
 ```terraform
 module "ssh_setup" {
-  source   = "git::https://github.com/embold/coder-ssh-setup.git?ref=v1.0.0"
+  source   = "git::https://github.com/emboldagency/coder-ssh-setup.git?ref=v1.0.0"
   count    = data.coder_workspace.me.start_count
   agent_id = coder_agent.example.id
   hosts    = ["github.com", "git.internal:2222"]
