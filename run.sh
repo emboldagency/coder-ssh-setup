@@ -34,7 +34,7 @@ cat "$KNOWN" "$TMP" | awk '!seen[$0]++' >"$KNOWN.tmp" && mv "$KNOWN.tmp" "$KNOWN
 
 # HOSTS_LINE is provided by Terraform via templatefile; it should be a
 # space-separated list of host or host:port entries.
-HOSTS_LINE="$${HOSTS_LINE}"
+HOSTS_LINE="${HOSTS_LINE}"
 
 for host in $HOSTS_LINE; do
   if echo "$host" | grep -q ':'; then
