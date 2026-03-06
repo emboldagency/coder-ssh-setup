@@ -1,5 +1,9 @@
 # SSH Setup module
 
+> [!CAUTION]
+> **DEPRECATION NOTICE:** This standalone repository is no longer maintained.
+> The **coder terraform module** has been migrated to: [**coder-registry**](https://github.com/emboldagency/coder-registry).
+
 Coder module that provisions a small `coder_script` that runs in Coder workspaces to ensure a sensible `~/.ssh/known_hosts` and basic Git SSH configuration (including the workspace-provided SSH key used for commit signing).
 
 ## Inputs
